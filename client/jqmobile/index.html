@@ -1,0 +1,31 @@
+<!-- jQuery Mobile Styles -->
+<link type="text/css" rel="stylesheet" href="resources/css/jquery.mobile.1.0a4.1.css"/>
+
+<!-- Main page -->
+<div id="main" data-nobackbtn="true" data-role="page">
+  <div data-role="header">
+      <h1>Mapping Example</h1>
+  </div>
+  <div data-role="content">
+    <a href="#map" data-role="button">Show Placemarks</a>
+  </div>
+</div>
+
+<!-- Map page -->
+<div id="map" data-position="fixed"  data-role="page">
+  <div data-role="header">
+    <h1>Placemarks</h1>
+  </div>
+  <div data-role="content" style="width:100%; height:100%; padding:0;">
+    <div id="maps_div" style="width:100%; height:100%;">
+    </div>
+  </div>
+</div>
+
+<!--JQuery Mobile-->
+<script type="text/javascript" src="resources/jquery.1.6.1.js"></script>
+<script type="text/javascript" src="resources/jquery.mobile.1.0a4.1.js"></script>
+
+<!-- App Files -->
+<script type="text/javascript" src="script/map.js"></script>
+<script type="text/javascript" src="script/init.js"></script>
