@@ -8,7 +8,7 @@ var map = function () {
           
       //Pass lat & lon into map api, initialising map at that point
       $fh.map({
-        target: '#maps_div',
+        target: document.getElementById('maps_div'),
         lat: lat,
         lon: lon,
         zoom: 15
