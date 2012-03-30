@@ -1,6 +1,6 @@
 Overview
 ====================
-This app requests a set of placemarks from the server and displays them to the user on a map. This app has 3 packages to demonstrate that the developer isn't restricted with how the UI can be built. The 3 packages use the following UI contruction methods:
+This app requests a set of placemarks from the server and displays them to the user on a map. This app has 3 packages to demonstrate that the developer isn't restricted with how the UI can be built. The 3 packages use the following UI construction methods:
 
 * default: plain html and javascript
 * sencha: Sencha Touch UI Framework
