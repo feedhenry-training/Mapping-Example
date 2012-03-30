@@ -36,7 +36,7 @@ var show = function () {
 };
 ```
 
-This tells the app to initialise a map in the __maps_div__ at the point specified by 'lat' and 'lon'. The value for these are set at '52.88' and '-7.96'. This could easily be changed to use the <a gen-link="feedhenry-api#$fh.geo">$fh.geo</a> api call to get the users current location.
+This tells the app to initialise a map in the __maps_div__ at the point specified by 'lat' and 'lon'. The value for these are set at '52.88' and '-7.96'. This could easily be changed to use the $fh.geo api call to get the users current location.
 
 Showing placemarks
 ---------------------
