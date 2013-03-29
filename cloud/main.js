@@ -1,6 +1,8 @@
-function getPlacemarks() {
-  var lat = 'undefined' !== typeof $params.lat ? $params.lat : 52.88,
-      lon = 'undefined' !== typeof $params.lon ? $params.lon : -7.96;
+var getPlacemarks = function (params, callback) {
+  console.log('in getPlacemarks');
+  
+  var lat = 'undefined' !== typeof params.lat ? params.lat : 52.88,
+      lon = 'undefined' !== typeof params.lon ? params.lon : -7.96;
   
   // Add the passed in location to a points array
   var points = [{lat: lat, lon: lon, title: 'My Placemark!'}];
@@ -18,5 +20,7 @@ function getPlacemarks() {
   points.push({lat: lat - 0.002, lon: lon, title: 'Bottom Middle'});
   points.push({lat: lat - 0.002, lon: lon + 0.002, title: 'Bottom Right'});
   
-  return {points: points};
+  return callback(null, {points: points});
 }
+
+exports.getPlacemarks = getPlacemarks;
